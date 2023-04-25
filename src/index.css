@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --scrollbar-bg: rgb(132, 132, 132);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  overflow: overlay;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scrollbar-color: var(--scrollbar-bg);
+  scrollbar-width: auto;
+}
+
+::-webkit-scrollbar {
+  opacity: 0;
+  width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  opacity: 0;
+  background-color: var(--scrollbar-bg);
+}
+
+@layer components {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
